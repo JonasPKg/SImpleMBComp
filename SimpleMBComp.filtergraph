@@ -62,13 +62,13 @@
     </LAYOUT>
   </FILTER>
   <FILTER uid="6" x="0.5287500000000001" y="0.4354838709677419" useARA="0"
-          uiLastX_Normal="-1569" uiLastY_Normal="196" uiopen_Normal="0">
+          uiLastX_Normal="-2093" uiLastY_Normal="356" uiopen_Normal="0">
     <PLUGIN name="SimpleMBComp" format="VST3" category="Fx" manufacturer="Jonas Krug"
             version="1.0.0" file="C:\Program Files\Common Files\VST3\SimpleMBComp.vst3\Contents\x86_64-win\SimpleMBComp.vst3"
-            uniqueId="f469e81d" isInstrument="0" fileTime="190354fa994" infoUpdateTime="1903553e716"
+            uniqueId="f469e81d" isInstrument="0" fileTime="19035bc6fc1" infoUpdateTime="19035be3176"
             numInputs="2" numOutputs="2" isShell="0" hasARAExtension="0"
             uid="e9539505"/>
-    <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <STATE>478.VMjLgTc....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyMz3BTEwlXmAiUYoWUrIVdA4hKAQkKTETRUAUSAAkKBolQY4BQtHTQDQzX5UTLXEWPlM1Y2Y0XqEDTtjDTt3hKt3hKt3BTR4RPtPUPIUETMEDTtHjZFkkKDYlPEgDUjYWQwHVdUYTVtf0UXIWUWkkKDAkPD4hKt3hKt3hKt3hKt3RUPIUQTMkKDYlKuEkQtDjXPEjTEYzXugiQtDSQFEFLUYjKAolKA4hKt3hKt3hKH4BQt.UQpQUPvPjKAgDTZoVPP4RRTYFUqcmUYcVSWkkKXcEVxU0UY4BQPIDQt3hKt3hKt3BNFAkKtTETRUDUS4BQl4xaQYjKAIGTAQ0YrI1ZMcjV0cmQY4BVWgkbUcUVtPDTBQjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO..</STATE>
     <LAYOUT>
       <INPUTS>
         <BUS index="0" layout="L R"/>
@@ -82,7 +82,7 @@
           uiLastY_Normal="63" uiopen_Normal="0">
     <PLUGIN name="AudioFilePlayer" format="VST3" category="Fx" manufacturer="Matkat Music LLC"
             version="1.0.0" file="C:\Program Files\Common Files\VST3\AudioFilePlayer.vst3\Contents\x86_64-win\AudioFilePlayer.vst3"
-            uniqueId="79fe81c" isInstrument="0" fileTime="18efdc77bb4" infoUpdateTime="1903553e716"
+            uniqueId="79fe81c" isInstrument="0" fileTime="18efdc77bb4" infoUpdateTime="19035be3176"
             numInputs="2" numOutputs="2" isShell="0" hasARAExtension="0"
             uid="e95d02c7"/>
     <STATE>306.VMjLgjR....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCM03BTIISX1UEaho2ZVkUdAAkKAwDUigWRWkEcQ0VTucmUY4BQP4TQLolShUELhsVRxHlXuESXzUTLhIVT5ElLzXTX0UjQYk2cUgEdQcjVvjzUKEyZsEVZyYUVywjQZsVRsIFMvHUXqE0UXIGMRElcMMjKt3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.</STATE>
