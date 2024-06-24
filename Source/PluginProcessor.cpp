@@ -13,12 +13,15 @@
     Timestamps PFM::SimpleMultiBandComp Tutorial YouTube (Matkat)
     01:01:11
     02:18:33 (20.06.2024)
+    03:30:44 (24.06.2024)
 
 ================================================================================
 */
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+
+
 
 //==============================================================================
 SimpleMBCompAudioProcessor::SimpleMBCompAudioProcessor()
@@ -376,8 +379,8 @@ bool SimpleMBCompAudioProcessor::hasEditor() const
 
 juce::AudioProcessorEditor* SimpleMBCompAudioProcessor::createEditor()
 {
-    //return new SimpleMBCompAudioProcessorEditor (*this);
-    return new juce::GenericAudioProcessorEditor(*this);
+    return new SimpleMBCompAudioProcessorEditor (*this);
+    //return new juce::GenericAudioProcessorEditor(*this);
 }
 
 //==============================================================================
