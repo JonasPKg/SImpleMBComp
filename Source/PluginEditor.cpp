@@ -275,6 +275,42 @@ Placeholder::Placeholder()
 }
 //==============================================================================
 
+CompressorBandControls::CompressorBandControls()
+{
+    addAndMakeVisible(attackSlider);
+    addAndMakeVisible(releaseSlider);
+    addAndMakeVisible(thresholdSlider);
+    addAndMakeVisible(ratioSlider);
+}
+
+void CompressorBandControls::resized()
+{
+    auto bounds = getLocalBounds().reduced(5);
+    using namespace juce;
+
+    FlexBox flexBox;
+    flexBox.flexDirection = FlexBox::Direction::row;
+    flexBox.flexWrap = FlexBox::Wrap::noWrap;
+
+    auto spacer = FlexItem().withWidth(4);
+    auto endCap = FlexItem().withWidth(6);
+
+    flexBox.items.add(endCap);
+    flexBox.items.add(FlexItem(attackSlider).withFlex(1.f));
+    flexBox.items.add(spacer);
+    flexBox.items.add(FlexItem(releaseSlider).withFlex(1.f));
+    flexBox.items.add(spacer);
+    flexBox.items.add(FlexItem(thresholdSlider).withFlex(1.f));
+    flexBox.items.add(spacer);
+    flexBox.items.add(FlexItem(ratioSlider).withFlex(1.f));
+    flexBox.items.add(endCap);
+
+    flexBox.performLayout(bounds);
+
+}
+
+//==============================================================================
+
 GlobalControls::GlobalControls(juce::AudioProcessorValueTreeState& apvts)
 {
     using namespace Params;
@@ -377,7 +413,7 @@ SimpleMBCompAudioProcessorEditor::SimpleMBCompAudioProcessorEditor (SimpleMBComp
     //addAndMakeVisible(controlBar);
     //addAndMakeVisible(analyzer);
     addAndMakeVisible(globalControls);
-    //addAndMakeVisible(bandControls);
+    addAndMakeVisible(bandControls);
     setSize (600, 500);
 }
 
