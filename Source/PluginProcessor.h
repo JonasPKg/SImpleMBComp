@@ -28,7 +28,7 @@ namespace Params
 {
 enum Names
 {
-    Low_Mid_Corssover_Freq,
+    Low_Mid_Crossover_Freq,
     Mid_High_Crossover_Freq,
 
     Threshold_Low_Band,
@@ -56,7 +56,7 @@ inline const std::map<Names, juce::String>& GetParams()
 {
     static std::map<Names, juce::String> params =
     {
-        {Low_Mid_Corssover_Freq, "Low-Mid Crossover Freq"},
+        {Low_Mid_Crossover_Freq, "Low-Mid Crossover Freq"},
         {Mid_High_Crossover_Freq, "Mid_High Crossover Freq"},
         {Threshold_Low_Band, "Threshold Low Band"},
         {Threshold_Mid_Band, "Threshold Mid Band"},
@@ -164,15 +164,18 @@ private:
     CompressorBand compressor;
 
     using Filter = juce::dsp::LinkwitzRileyFilter<float>;
-    Filter LP, HP;
+        //  fc0     fc1
+    Filter  LP1,    AP2, 
+            HP1,    LP2,    
+                    HP2;
+    
+    //Filter  invAP1, invAP2;
+    //juce::AudioBuffer<float> invAPBuffer;
 
-    Filter AP;
+    juce::AudioParameterFloat* lowMidCrossover{ nullptr };
+    juce::AudioParameterFloat* midHighCrossover{ nullptr };
 
-    juce::AudioBuffer<float> apBuffer;
-
-    juce::AudioParameterFloat* lowCrossover{ nullptr };
-
-    std::array<juce::AudioBuffer<float>, 2> filterBuffers;
+    std::array<juce::AudioBuffer<float>, 3> filterBuffers;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleMBCompAudioProcessor)
 };
