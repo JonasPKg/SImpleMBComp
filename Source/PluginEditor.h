@@ -176,16 +176,20 @@ struct CompressorBandControls : juce::Component
 private:
     juce::AudioProcessorValueTreeState& apvts;
 
-    RotarySliderWithLabels attackSlider, releaseSlider, thresholdSlider, ratioSlider;
+    RotarySliderWithLabels attackSlider, releaseSlider, thresholdSlider /*, ratioSlider */;
     RatioSlider ratioSlider;
 
     using Attachment = juce::AudioProcessorValueTreeState::SliderAttachment;
     std::unique_ptr<Attachment> attackSliderAttachment, releaseSliderAttachment, thresholdSliderAttachment, ratioSliderAttachment;
     
-    juce::ToggleButton bypassButton, soloButton, muteButton;
+    juce::ToggleButton bypassButton, soloButton, muteButton, lowBand, midBand, highBand;
 
     using BtnAttachment = juce::AudioProcessorValueTreeState::ButtonAttachment;
     std::unique_ptr<BtnAttachment> bypassButtonAttachment, soloButtonAttachment, muteButtonAttachment;
+
+    juce::Component::SafePointer<CompressorBandControls> safePtr{ this };
+
+    void updateAttachments();
 };
 
 struct GlobalControls : juce::Component
